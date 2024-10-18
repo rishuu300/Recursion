@@ -9,8 +9,8 @@ public class Josephus {
         
         int i=0;
         while(al.size() != 1){
-            i = (i+k-1) % al.size();
-            al.remove(i);
+            i = (i+k) % al.size();
+            al.remove(i-1);
         }
         return al.get(0);
     }
